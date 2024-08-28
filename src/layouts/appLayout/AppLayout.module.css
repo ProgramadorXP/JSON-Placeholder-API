@@ -40,6 +40,7 @@
   transition: all 400ms ease-in-out;
   z-index: 100;
   padding: 1em;
+  background-color: rgb(21, 116, 108);
 }
 
 .openMenu {
