@@ -1,0 +1,121 @@
+.container {
+  background: rgb(21, 116, 108);
+  min-height: 100lvh;
+  display: grid;
+  grid-template-columns: repeat(1fr, auto);
+  grid-template-rows: 40px 1fr 40px;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  gap: 1em;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: #ccc;
+}
+
+.header h2 {
+  font-size: 1em;
+}
+
+.header span {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  transition: all 400ms ease-in-out;
+  z-index: 100;
+  padding: 1em;
+}
+
+.openMenu {
+  top: 40px;
+}
+
+.menu li {
+  list-style: none;
+  padding: 0.2em;
+  text-align: center;
+  transition: all 400ms ease-in-out;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  color: #ccc;
+  transition: all 200ms ease-in-out;
+}
+
+.menu__avatar {
+  border-radius: 50%;
+  width: 25px;
+}
+
+.main {
+  grid-area: main;
+  border-radius: 10px;
+  height: fit-content;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+.footer {
+  padding: 1em;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}
+
+@media (min-width: 630px) {
+  .container {
+    padding: 0.5em 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header h2 {
+    font-size: 1.2em;
+  }
+
+  .header span {
+    display: none;
+  }
+
+  .menu {
+    width: fit-content;
+    transition: none;
+    position: static;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header h2 {
+    font-size: 1.5em;
+  }
+
+  .menu__link:hover {
+    color: black;
+  }
+}

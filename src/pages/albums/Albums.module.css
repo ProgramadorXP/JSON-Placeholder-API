@@ -1,0 +1,10 @@
+.title {
+    font-size: 1.2em;
+    padding: 0.4em 1em;
+}
+
+.albums__menu {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}

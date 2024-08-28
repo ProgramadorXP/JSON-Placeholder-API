@@ -1,0 +1,30 @@
+.title {
+    font-size: 1.2em;
+    padding: 1em 1em 0 1em;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(1fr, auto);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+    padding: 1em;
+}
+
+@media (min-width: 630px) {
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .posts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

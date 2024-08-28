@@ -1,0 +1,33 @@
+.title {
+    font-size: 1.2em;
+    padding: 0.4em 1em;
+}
+
+.todos {
+    padding: 1em;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(1fr, auto);
+}
+
+.menu__item {
+    margin: 0.1em 1em;
+}
+
+.menu__item span {
+    font-weight: 500;
+    text-decoration-thickness: 5px;
+    text-decoration-color: green;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media (min-width: 630px) {
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
+}

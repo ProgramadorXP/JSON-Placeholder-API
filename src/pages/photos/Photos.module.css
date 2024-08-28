@@ -1,0 +1,41 @@
+.title {
+    font-size: 1.2em;
+    padding: 0.4em 1em;
+}
+
+.photos {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(1fr, auto);
+    gap: 0.5em;
+}
+
+@media (min-width: 430px) {
+    .photos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px) {
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1536px) {
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

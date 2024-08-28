@@ -1,0 +1,140 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__details {
+  display: flex;
+  gap: 0.5em;
+}
+
+.post__containerImg {
+  display: flex;
+  align-items: center;
+}
+
+.post__userImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post__details div:last-child {
+  align-self: center;
+}
+
+.post__username {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #27272a;
+  border: 1px solid #000;
+  box-shadow: 24;
+  padding: 1em 0;
+}
+
+.menu__item {
+  list-style: none;
+  text-align: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu__item:last-child {
+    margin-top: 1em;
+}
+
+.menu__item:last-child .menu__link {
+    color: rgb(211, 0, 0);
+    font-weight: 500;
+}
+
+.post__description {
+    font-size: 0.8em;
+}
+
+.post__title {
+  font-weight: 600;
+}
+
+.post__body {
+  margin-top: 1em;
+}
+
+.post__linkGroup {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.post__linkGroup a {
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  color: white;
+  transition: all 200ms ease-in;
+  text-decoration: none;
+}
+
+.post__view {
+  background-color: rgb(52, 209, 0);
+}
+
+.post__update {
+  background-color: rgb(0, 52, 209);
+}
+
+.form {
+  width: 100%;
+  max-width: 25em;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #ffffff;
+}
+
+.post__delete {
+  background-color: rgb(209, 0, 52);
+}
+
+@media (min-width: 1024px) {
+  .post__buttonGroup button:hover {
+    opacity: 0.7;
+  }
+}

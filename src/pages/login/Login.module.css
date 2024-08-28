@@ -1,0 +1,17 @@
+.form {
+  width: 100%;
+  max-width: 25em;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+@media (min-width: 434px) {
+  .form {
+    padding: 1.5em;
+  }
+}

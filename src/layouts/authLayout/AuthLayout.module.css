@@ -1,0 +1,34 @@
+.container {
+  min-height: 100lvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1rem;
+  background: rgb(21, 116, 108);
+}
+
+.header {
+  max-width: 25em;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  color: white;
+  font: bold;
+  text-shadow: 10px 10px 10px black;
+  text-align: center;
+}
+
+.link {
+  color: #fff;
+}
+
+.footer {
+  padding: 1em;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}
