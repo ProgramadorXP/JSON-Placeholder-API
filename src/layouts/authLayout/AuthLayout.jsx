@@ -14,7 +14,7 @@ export default function AuthLayout() {
         </header>
         <Outlet />
         <div>
-          <p>Visit <Link className={styles.link}>https://jsonplaceholder.typicode.com/</Link> to see all users available</p>
+          <p>Visit <Link to={"https://jsonplaceholder.typicode.com/"} className={styles.link}>https://jsonplaceholder.typicode.com/</Link> to see all users available</p>
         </div>
         <footer className={styles.footer}>
           <p>&copy; All rights reserved {new Date().getFullYear()}</p>
